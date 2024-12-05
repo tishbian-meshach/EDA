@@ -1,3 +1,38 @@
+import numpy as np
+# Creating NumPy arrays
+arr1 = np.array([1, 2, 3, 4, 5]) # 1-dimensional array
+arr2 = np.array([[1, 2, 3], [4, 5, 6]]) # 2-dimensional array
+# Basic operations on arrays
+arr_sum = arr1 + 10 # Add 10 to each element
+arr_product = arr2 * 2 # Multiply each element by 2
+# Accessing elements and slicing
+element_at_index_2 = arr1[2] # Accessing element at index 2
+sliced_arr1 = arr1[1:4] # Slicing from index 1 to 3 (exclusive)
+sliced_arr2 = arr2[:, 1] # Accessing the second column of arr2
+# Array shape and dimensions
+shape_of_arr2 = arr2.shape # Shape of arr2
+dimensions_of_arr2 = arr2.ndim # Number of dimensions in arr2
+# Reshape the array
+reshaped_arr1 = arr1.reshape((5, 1)) # Reshape arr1 to have 5 rows and 1 column
+# Displaying results
+print("Original 1D array:")
+print(arr1)
+print("\nOriginal 2D array:")
+print(arr2)
+print("\nArray operations:")
+print("arr1 + 10:", arr_sum)
+print("arr2 * 2:", arr_product)
+print("\nArray slicing:")
+print("Element at index 2:", element_at_index_2)
+print("Sliced arr1:", sliced_arr1)
+print("Second column of arr2:", sliced_arr2)
+print("\nArray shape and dimensions:")
+print("Shape of arr2:", shape_of_arr2)
+print("Number of dimensions in arr2:", dimensions_of_arr2)
+print("\nReshaped array:")
+print(reshaped_arr1)
+
+
 # Set seed for reproducibility
 set.seed(123)
 # Generate a synthetic time series data
